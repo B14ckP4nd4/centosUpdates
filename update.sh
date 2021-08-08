@@ -13,6 +13,9 @@ yum install epel-release -y
 # install development tools like git and others
 yum group install "Development Tools" 
 
+# install nano
+yum install nano
+
 #last update and reboot
 yum -y update
 reboot now
