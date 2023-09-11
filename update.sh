@@ -4,18 +4,17 @@
 echo 'assumeyes=1' >> /etc/yum.conf
 
 # update OS based on base repo
-sudo yum --disablerepo=\* --enablerepo=base,updates update
-yum update -y
+dnf update -y
 
 # install epel-release for access to epel packages
-yum install epel-release -y
+dnf install epel-release -y
 
 # install development tools like git and others
-yum group install "Development Tools" 
+dnf group install "Development Tools" 
 
 # install nano
-yum install nano
+dnf install nano
 
 #last update and reboot
-yum -y update
+dnf -y update
 reboot now
